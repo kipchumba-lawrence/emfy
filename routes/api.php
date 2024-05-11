@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::post('amocrm', [AddHooksController::class, 'store']);
+Route::get('test', [AddHooksController::class, 'noteContactAdd']);
